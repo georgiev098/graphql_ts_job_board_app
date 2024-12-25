@@ -3,9 +3,13 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "build",
-    "strict": false
+    "strict": false, // Enable strict mode for better type safety
+    "module": "ESNext", // Use ES Modules
+    "target": "ES2020", // Ensure compatibility with top-level await
+    "esModuleInterop": true, // Allow compatibility with CommonJS modules
+    "moduleResolution": "node"
   },
   "ts-node": {
-    "esm": true
+    "esm": true // Enable ESM support for ts-node
   }
 }
